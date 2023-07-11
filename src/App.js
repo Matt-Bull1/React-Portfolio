@@ -20,9 +20,9 @@ function App() {
         // if (currentPage === 'Projects') {
         //     return <Projects />
         // }
-        // if (currentPage === 'Contact') {
-        //     return <Contact />
-        // }
+        if (currentPage === 'Contact') {
+            return <Contact />
+        }
         // if (currentPage === 'Resume') {
         //     return <Resume />
         // }

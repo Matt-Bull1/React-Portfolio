@@ -175,6 +175,59 @@ p {
     font-size: 30px;
 }
 
+/*Adding style to contact me sections*/
+
+.contact-me {
+    background-image: linear-gradient(rgba(1, 2, 9, 0.471) 0%,
+            rgba(36, 13, 210, 0.79) 90%);
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 5px 5px 5px;
+}
+
+.contact-me h5 {
+    font-size: 36px;
+    padding: 20px;
+    color: white;
+    margin: 15px;
+}
+.form {
+    margin: 20px;
+}
+
+
+.form input {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    width: 30%;
+    padding:8px;
+}
+
+h2 {
+    color:white;
+    margin-top:25px;
+    margin-left: 15px;
+}
+
+h3 {
+    color:white;
+    margin-top:25px;
+    margin-left: 0px;
+}
+
+/*Adding style to contact me sections*/
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(210, 13, 29, 0.79) 0%,
+            rgba(9, 1, 9, 0.471) 100%);
+}
+
+
 /*Nav link color change for active section*/
 
 .active {
