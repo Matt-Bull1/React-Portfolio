@@ -100,7 +100,7 @@ p {
 }
 
 .card-header img{
-    height: 200px;
+    height: 350px;
     border-radius: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -134,7 +134,9 @@ p {
 .footer {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     background-image: linear-gradient(rgba(20, 13, 210, 0.79) 0%,
             rgba(9, 1, 9, 0.471) 100%);
 }
