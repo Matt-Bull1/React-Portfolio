@@ -252,6 +252,18 @@ h3 {
     margin-bottom: 15px;
 }
 
+h3 {
+    color: white;
+    padding-left: 10px;
+    padding-top:10px;
+}
+
+.resume{
+    color:white;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
 
 /*Nav link color change for active section*/
 

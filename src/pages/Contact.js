@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { validateEmail } from '../utils/helpers';
+
 export default function Contact() {
     const [email, setEmail] = useState('');
     const [Name, setName] = useState('');
@@ -25,11 +27,28 @@ export default function Contact() {
         // Preventing default
         e.preventDefault();
 
+        //check if valid email
+        if (!validateEmail(email)) {
+            setErrorMessage('Email is invalid');
+            return;
+        }
         // clear out the input after a successful registration.
         setName('');
         setMessage('');
         setEmail('');
     };
+
+    const handleNoMessage = (e) => {
+        const { target } = e;
+        const inputValue = target.value;
+        
+        if(inputValue === '') {
+            setErrorMessage('Message field is required');
+        }
+        
+    };
+
+
     return (
         <div>
             <form className="form">
@@ -55,6 +74,7 @@ export default function Contact() {
                     value={message}
                     name="message"
                     onChange={handleInputChange}
+                    onMouseOut={handleNoMessage}
                     type="text"
                     placeholder="Message"
                 />
