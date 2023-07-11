@@ -1,0 +1,200 @@
+:root {
+    --blue-text: #9e9cd6;
+    --body-header-color: #0a0830;
+    --portfolio-fonts: 'Fantasy', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--body-header-color);
+    font-family: var(--portfolio-fonts);
+}
+
+.header {
+    padding: 20px;
+    font-family: var(--portfolio-fonts);
+    background-color: var(--body-header-color);
+    color: #9c9c9c;
+}
+
+/*Styling my name in header so that "'s Portfolio" is hidden until hover over and text displays in red*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header-hidden {
+    display: none;
+}
+
+.header h1:hover .header-hidden {
+    display: inline-block;
+    color: var(--blue-text);
+}
+
+/*Styling Navbar to the right of the header */
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--portfolio-fonts);
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    flex-wrap: Wrap;
+    font-weight: bold;
+}
+
+a {
+    color: var(--blue-text);
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+}
+
+/*Banner image graphic CSS*/
+.image-graphic {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-image: url("../public/images/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Structuring cards on portfolio webpage */
+
+.card {
+    background-color: rgba(200, 192, 255, 0);
+    width: 20%;
+    margin: 10px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.card:first-of-type img {
+    transform: scale(1.1);
+}
+
+/* Positioning the image on the card and adding radius and other styling*/
+.card-header {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.card-header img {
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    font-family: var(--portfolio-fonts);
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: fit-content;
+}
+
+.card:hover {
+
+    /* create a glowing red effect on hover */
+    box-shadow: inset 0px 0px 8px #0c049b, 0 0 15px #0c049b;
+
+    /* use linear-gradient() function to create a fading background  */
+    background-image: linear-gradient(rgba(13, 52, 210, 0.79) 0%,
+            rgba(9, 1, 9, 0.471) 100%);
+
+    transform: scale(1.05);
+    transition: all 1s ease;
+
+}
+
+/*Adding style to contact me sections*/
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(20, 13, 210, 0.79) 0%,
+            rgba(9, 1, 9, 0.471) 100%);
+}
+
+/*Adding style to contact me sections*/
+.footer img {
+    max-width: 50px;
+    max-height: 50px
+}
+
+/*Adding simple Styling to Footer*/
+
+.footer {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/*Nav link color change for active section*/
+
+.active {
+ color: rgb(34, 195, 220);
+}
+
+/*Adding Media Screens for responsive design*/
+
+
+/* cards split into two columns at 992px or smaller*/
+@media screen and (max-width:992px) {
+    .card {
+        width: 50%;
+    }
+
+    /*attempt to stop about me card text from spilling on to the portfolio highlight*/
+    /* .card p {
+        text-align: right;
+        font-size: 16px;
+        
+    } */
+
+}
+
+/* cards so are stacked on top of each other at 768px or smaller */
+@media screen and (max-width:768px) {
+    .card {
+        width: 100%;
+    }
+
+    /*Change nav bar text color to make easier to read in smaller viewing*/
+    a {
+        color: rgb(255, 252, 50);
+
+    }
+
+    /*attempt to stop about me card text from spilling on to the portfolio highlight*/
+    /* .card p {
+        text-align: right;
+        font-size: 16px;
+    } */
+
+}
