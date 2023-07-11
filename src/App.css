@@ -227,6 +227,20 @@ h3 {
             rgba(9, 1, 9, 0.471) 100%);
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.projects h4 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+
 
 /*Nav link color change for active section*/
 
