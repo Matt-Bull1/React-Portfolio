@@ -14,9 +14,9 @@ function App() {
 
     //render page function for selected nav link
     const renderPage = () => {
-        // if (currentPage === 'About') {
-        //     return <About />;
-        // }
+        if (currentPage === 'About') {
+            return <About />;
+        }
         // if (currentPage === 'Projects') {
         //     return <Projects />
         // }

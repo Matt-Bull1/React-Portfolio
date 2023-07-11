@@ -1,7 +1,7 @@
 :root {
     --blue-text: #9e9cd6;
     --body-header-color: #0a0830;
-    --portfolio-fonts: 'Fantasy', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fonts: 'Fantasy', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
@@ -12,12 +12,12 @@
 
 body {
     background-color: var(--body-header-color);
-    font-family: var(--portfolio-fonts);
+    font-family: var(--fonts);
 }
 
 .header {
     padding: 20px;
-    font-family: var(--portfolio-fonts);
+    font-family: var(--fonts);
     background-color: var(--body-header-color);
     color: #9c9c9c;
 }
@@ -42,7 +42,7 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: var(--portfolio-fonts);
+    font-family: var(--fonts);
     font-size: 20px;
 }
 
@@ -108,7 +108,7 @@ p {
 
 
 .card p {
-    font-family: var(--portfolio-fonts);
+    font-family: var(--fonts);
     padding: 10px;
     color: white;
     font-size: 20px;
@@ -130,7 +130,7 @@ p {
 
 }
 
-/*Adding style to contact me sections*/
+/*Adding style to footer sections*/
 .footer {
     display: flex;
     justify-content: center;
@@ -139,20 +139,40 @@ p {
             rgba(9, 1, 9, 0.471) 100%);
 }
 
-/*Adding style to contact me sections*/
+/*Adding style to footer sections*/
 .footer img {
     max-width: 50px;
     max-height: 50px
 }
 
-/*Adding simple Styling to Footer*/
-
-.footer {
+/*about me styling */
+.about-portfolio {
     color: white;
     text-align: center;
-    margin: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
+    padding: 0 5px 5px 5px;
+    background-image: linear-gradient(rgba(103, 81, 83, 0.79) 0%,
+            rgba(9, 1, 9, 0.471) 100%);
+
+}
+
+.about-intro {
+    text-align: center;
+    font-size: 26px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Styling about me section with cards */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    min-width: 100%;
+}
+
+.about-me h2 {
+    font-size: 30px;
 }
 
 /*Nav link color change for active section*/
