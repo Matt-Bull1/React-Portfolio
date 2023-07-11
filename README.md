@@ -15,7 +15,7 @@
 
   Follow the link below to the website.
   Once there click any of the tabs in the navigation bar to be taken to the corresponding page
-  <a href="https://murmuring-retreat-53414-22991f2ca674.herokuapp.com/">
+  <a href="https://matt-bull1.github.io/React-Portfolio/">
   My Application
   </a>
 
