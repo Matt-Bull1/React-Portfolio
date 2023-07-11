@@ -6,8 +6,8 @@ export default function Project(props) {
 
     // dynamically loading projects from portfolio page into project component 
     return (
-        <div className="card">
-        <div className="card-header">
+    <div className="card">
+        <div className="card-project">
             <a href={props.data.link} target="_blank">
                 <img src={props.data.imagesrc} alt="Project card" />
             </a>

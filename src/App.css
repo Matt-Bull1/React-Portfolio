@@ -99,7 +99,7 @@ p {
     text-align: center;
 }
 
-.card-header img {
+.card-header img{
     height: 200px;
     border-radius: 15px;
     margin-top: 10px;
@@ -239,7 +239,18 @@ h3 {
     padding: 5px;
 }
 
+.card-project {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
 
+.card-project img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
 
 /*Nav link color change for active section*/
