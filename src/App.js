@@ -17,9 +17,9 @@ function App() {
         if (currentPage === 'About') {
             return <About />;
         }
-        // if (currentPage === 'Projects') {
-        //     return <Projects />
-        // }
+        if (currentPage === 'Projects') {
+            return <Projects />
+        }
         if (currentPage === 'Contact') {
             return <Contact />
         }
